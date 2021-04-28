@@ -1,0 +1,169 @@
+
+
+body {
+  background-color: #000;
+  background-image: url("./homer.png");
+  background-size:100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 50px;
+}
+
+#hola, #hola2{
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+  text-indent: -10%;
+  color: #fe4fa2;
+  align-items: flex-start;
+  font-style: italic;
+  text-shadow: 3px 3px 2px #000;
+}
+
+
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("https://image.freepik.com/vector-gratis/patron-donas-glaseadas-costuras_123207-272.jpg");
+ 
+  height: 56px;
+  /* padding-left: 15px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header span {
+  font-size: 40px;
+  color: rgb(117, 111, 111);
+  padding-right: 15px;
+}
+
+#header a {
+  padding-left: 15px;
+}
+
+
+#container {
+  background-color: #ffff; opacity: 100%;
+  box-shadow: 2px 2px 5px#000;
+  width: 50%;
+  min-width: 400px;
+  border-radius: 5px;
+}
+
+#createdBy{
+  font-family: 'Pacifico', cursive;
+  color: #8d2857;
+  font-size: 20px;
+}
+
+#inputContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 25px;
+  background-color: #fff;opacity: 100%; 
+}
+
+#toDoInput {
+  outline: none;
+  width: 75%;
+  padding-left: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+#addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 35px;
+  background: hsl(59, 100%, 58%);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+#toDoContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.toDoShell {
+  width: 650px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.toDoShell span {
+  width: 90%;
+}
+.completeText {
+  color: lightgrey;
+  text-decoration: line-through;
+}
+
+.completeCheckbox {
+  transform: scale(1.8);
+}
+
+#dona{
+  display: flex;
+  align-items: center;
+}
+#rotated:hover{
+  animation-duration: 0s;
+}
+
+#rotated{
+  width: 100px;
+	animation-name: rotation;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+@media (max-width: 800px) {
+body{
+  background-image: url("https://i.pinimg.com/736x/ae/62/e0/ae62e0ef67c46c0f14c026ee97ba60cf.jpg");
+}
+#hola, #hola2{
+  color: #fff;
+}
+#createdBy{
+  color: rgb(235, 232, 57);
+  text-shadow: 2px 2px 1px #000;
+  font-family: 'Roboto', sans-serif;
+
+}
+#header{
+  background:none;
+}
+}
